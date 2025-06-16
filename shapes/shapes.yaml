@@ -1,0 +1,38 @@
+shapes:
+  - name: arc_shape
+    start_pose:
+      position: [0.4, 0.0, 0.3]
+      orientation_rpy: [3.1415, 0.0, 0.0]
+    segments:
+      - type: arc
+        center: [0.1, 0.0]
+        radius: 0.1
+        start_angle: 0.0
+        end_angle: 1.57
+        clockwise: false
+        resolution: 20
+
+  - name: bspline_shape
+    start_pose:
+      position: [0.4, -0.2, 0.3]
+      orientation_rpy: [3.1415, 0.0, 0.0]
+    segments:
+      - type: bspline
+        control_points:
+          - [0.0, 0.0]
+          - [0.05, 0.1]
+          - [0.1, -0.1]
+          - [0.15, 0.0]
+
+  - name: blended_corner
+    start_pose:
+      position: [0.4, 0.2, 0.3]
+      orientation_rpy: [3.1415, 0.0, 0.0]
+    segments:
+      - type: blend
+        points:
+          - [0.0, 0.0]
+          - [0.05, 0.0]
+          - [0.05, 0.05]
+        blend_radius: 0.01
+        

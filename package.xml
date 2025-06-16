@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>avatar_challenge</name>
+  <version>0.0.1</version>
+  <description>A package to trace 2D shapes or execute planned poses using xArm 7 and ROS 2</description>
+  <maintainer email="your_email@example.com">Hamid Farzaneh</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>xarm_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <!-- For MoveIt core and planning interfaces -->
+  <depend>moveit_ros_move_group</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  <!-- For MoveIt Python interface -->
+  <depend>moveit_commander</depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
